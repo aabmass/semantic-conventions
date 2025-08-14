@@ -244,7 +244,6 @@ groups:
       The **span name** SHOULD be `invoke_agent {gen_ai.agent.name}` if `gen_ai.agent.name` is readily available.
       When `gen_ai.agent.name` is not available, it SHOULD be `invoke_agent`.
       Semantic conventions for individual GenAI systems and frameworks MAY specify different span name format.
-    extends: attributes.gen_ai.inference.client
     attributes:
       - ref: gen_ai.provider.name
         requirement_level: required
